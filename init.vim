@@ -1,6 +1,13 @@
 call plug#begin(stdpath('config').'/plugged')
+" Start page
+  Plug 'mhinz/vim-startify'                     " Starting page
+
 " Theme
-  Plug 'joshdick/onedark.vim',                  " Dark theme
+  Plug 'joshdick/onedark.vim'                   " Dark theme
+  Plug 'folke/tokyonight.nvim'                  " Dark tokyonight
+
+" LSP
+  Plug 'neovim/nvim-lspconfig'                  " LSP config
 
 " File browser
   Plug 'preservim/nerdTree'                     " File browser  
@@ -84,20 +91,29 @@ let mapleader=" "           " leader key is space
 " set noswapfile            " disable creating swap file
 " set backupdir=~/.cache/vim" Directory to store backup files.
 
+" Theme
+colorscheme onedark
 " Remap keys:
 " insert mode:
-inoremap <Space> <Space><C-g>u
+inoremap <SPACE> <SPACE><C-g>u
 inoremap , ,<C-g>u
 inoremap . .<C-g>u
+inoremap ? ?<C-g>u
 inoremap jk <Esc>
 inoremap jj <Esc>
 inoremap kj <Esc>
 
 " normal mode:
-nnoremap <SPACE> <Nop>
 nnoremap j gj
 nnoremap k gk
+" make Y behave like D
+nnoremap Y y$           
 
 " visual mode:
 vnoremap j gj
 vnoremap k gk
+
+" Other setting
+for setting_file in split(glob(stdpath('config').'/settings/*.vim'))
+  execute 'source' setting_file
+endfor
