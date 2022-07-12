@@ -107,7 +107,7 @@ inoremap kj <Esc>
 nnoremap j gj
 nnoremap k gk
 " make Y behave like D
-nnoremap Y y$           
+nnoremap Y y$
 
 " visual mode:
 vnoremap j gj
