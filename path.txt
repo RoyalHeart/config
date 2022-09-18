@@ -3,3 +3,4 @@ vimium-options: on vimium browser extension
 YT style: youtube style extension
 .gitconfig: ~/.gitconfig
 pwsh: script when open setting page in PowerShell
+colorpalete: some nice color palette
