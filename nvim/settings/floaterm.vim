@@ -14,7 +14,7 @@ endif
 
 " Set color
 hi Floaterm guibg=Grey15
-hi FloatermBorder guifg=Orange guibg=DarkGreen
+hi FloatermBorder guifg=Pink guibg=DarkPink
 "hi FloatermNC guibg=darkred
 
 autocmd User FloatermOpen        " triggered after opening a new/existed floater
