@@ -1,0 +1,7 @@
+background: 1a1117
+text: e2c5d2
+blink_cursor: ecafc9
+key_word: db6698
+comment: 777575
+number, variable: b274cc
+function: 9ecba3
