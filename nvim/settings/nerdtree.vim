@@ -1,4 +1,3 @@
-" F5 to toggle 
 map <silent> <leader>e :NERDTreeToggle<CR>
 
 " Open the existing NERDTree on each new tab.

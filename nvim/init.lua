@@ -1,11 +1,7 @@
-require('plugins')
 require('base')
 require('mapping')
-
--- set catpuccin theme
-vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
-require("catppuccin").setup()
-vim.cmd [[colorscheme catppuccin]]
+require('plugins')
+require('color')-- has custom highlight
 
 -- Other setting/plugin:
 vim.cmd [[

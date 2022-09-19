@@ -1,34 +1,37 @@
-function map(mode, shortcut, command)
+local function map(mode, shortcut, command)
   vim.api.nvim_set_keymap(mode, shortcut, command, { noremap = true, silent = true })
 end
 
-function nmap(shortcut, command)
+local function nmap(shortcut, command)
   map('n', shortcut, command)
 end
 
-function imap(shortcut, command)
+local function imap(shortcut, command)
   map('i', shortcut, command)
 end
 
-function vmap(shortcut, command)
+local function vmap(shortcut, command)
   map('v', shortcut, command)
 end
 --Remap keys:
 -- normal mode:
-nmap('<Space>', '<Nop>') -- make leader key no weird
-nmap('Y', 'y$') -- Y behave like D
-nmap('j', 'gj')
+nmap('<Space>', '<Nop>') --make leader key no weird
+nmap('Y', 'y$') --Y behave like D
+nmap('j', 'gj')--moving through wrap
 nmap('k', 'gk')
+nmap('<tab>', ':bn<CR>')--next buffer
+nmap('<C-_>', ':Commentary<CR>')--toggle comment
+nmap('<CR>', ':noh<CR><CR>')--enter will hide highlight
 
 -- insert mode:
 --  undo more fine-grained
 imap(',', ',<C-g>u')
 imap('.', '.<C-g>u')
 imap('?', '?<C-g>u')
---  esc
-imap('jk', '<Esc>')
+imap('jk', '<Esc>')--to escape
 
 -- visual mode
---  go through wrap
+--  go through wr
 vmap('j', 'gj')
 vmap('k', 'gk')
+vmap('<C-_>', ':Commentary<CR>')--toggle comment
