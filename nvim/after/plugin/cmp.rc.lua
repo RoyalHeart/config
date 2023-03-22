@@ -11,6 +11,7 @@ local source_mapping = {
     cmp_tabnine = "[TN]",
     path = "[Path]",
 }
+require('cmp_tabnine.config').setup()
 cmp.setup({
     snippet = {
         expand = function(args)
@@ -22,11 +23,11 @@ cmp.setup({
         ['<C-f>'] = cmp.mapping.scroll_docs(4),
         ['<C-Space>'] = cmp.mapping.complete(),
         ['<C-e>'] = cmp.mapping.close(),
-        ['<CR>'] = cmp.mapping.confirm({
+        ['<Tab>'] = cmp.mapping.confirm({
             behavior = cmp.ConfirmBehavior.Replace,
             select = true
         }),
-        ['<Tab>'] = cmp.mapping(function(fallback)
+        ['<Down>'] = cmp.mapping(function(fallback)
             if cmp.visible() then
                 cmp.select_next_item()
             elseif luasnip.expand_or_jumpable() then
@@ -50,11 +51,11 @@ cmp.setup({
             compare.order,
         },
     },
-    sources = cmp.config.sources({
+    sources = {
         { name = 'nvim_lsp' },
         { name = 'buffer' },
         { name = 'cmp_tabnine' },
-    }),
+    },
     formatting = {
         format = function(entry, vim_item)
             -- if you have lspkind installed, you can use it like

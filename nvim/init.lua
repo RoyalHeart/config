@@ -1,7 +1,7 @@
 require('base')
 require('mapping')
-require('plugins')
-require('color')-- has custom highlight
+require('plugins_packer')
+require('color') -- has custom highlight
 
 -- Other setting/plugin:
 vim.cmd [[
