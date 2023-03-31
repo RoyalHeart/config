@@ -2,7 +2,6 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin', 'D:/Config/nvim/plugged')
 
-
 -- Start page
 Plug 'mhinz/vim-startify' -- Starting page
 

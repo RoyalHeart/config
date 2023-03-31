@@ -1,3 +1,6 @@
+if vim.g.vscode then
+    -- VSCode extension
+else
 require('base')
 require('mapping')
 require('plugins_packer')
@@ -9,3 +12,4 @@ for setting_file in split(glob(stdpath('config').'/settings/*.vim'))
   execute 'source' setting_file
 endfor
 ]]
+end

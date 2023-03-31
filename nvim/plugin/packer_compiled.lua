@@ -109,6 +109,14 @@ _G.packer_plugins = {
     path = "D:/Config/nvim/packed\\packer\\start\\cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["cmp-tabnine"] = {
+    after_files = { "D:\\Config\\nvim\\packed\\packer\\opt\\cmp-tabnine\\after\\plugin\\cmp-tabnine.lua" },
+    load_after = {},
+    loaded = true,
+    needs_bufread = false,
+    path = "D:/Config/nvim/packed\\packer\\opt\\cmp-tabnine",
+    url = "https://github.com/tzachar/cmp-tabnine"
+  },
   ["emmet-vim"] = {
     loaded = true,
     path = "D:/Config/nvim/packed\\packer\\start\\emmet-vim",
@@ -164,6 +172,11 @@ _G.packer_plugins = {
     path = "D:/Config/nvim/packed\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-surround"] = {
+    loaded = true,
+    path = "D:/Config/nvim/packed\\packer\\start\\nvim-surround",
+    url = "https://github.com/kylechui/nvim-surround"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "D:/Config/nvim/packed\\packer\\start\\nvim-treesitter",
@@ -178,11 +191,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "D:/Config/nvim/packed\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
-  },
-  ["tabnine-nvim"] = {
-    loaded = true,
-    path = "D:/Config/nvim/packed\\packer\\start\\tabnine-nvim",
-    url = "https://github.com/codota/tabnine-nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -262,6 +270,11 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Load plugins in order defined by `after`
+time([[Sequenced loading]], true)
+vim.cmd [[ packadd nvim-cmp ]]
+vim.cmd [[ packadd cmp-tabnine ]]
+time([[Sequenced loading]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

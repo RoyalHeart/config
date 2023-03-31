@@ -2,7 +2,7 @@ local status, cmp = pcall(require, "cmp")
 if (not status) then return end
 local status2, luasnip = pcall(require, "luasnip")
 if (not status2) then return end
-local lspkind = require 'lspkind'
+local lspkind = require('lspkind')
 local compare = require('cmp.config.compare')
 local source_mapping = {
     buffer = "[Buffer]",
@@ -11,11 +11,18 @@ local source_mapping = {
     cmp_tabnine = "[TN]",
     path = "[Path]",
 }
-require('cmp_tabnine.config').setup()
+
+-- require('lspconfig')['pyright'].setup {
+--     capabilities = capabilities
+--   }
+-- require('lspconfig')['lua_ls'].setup {
+--     capabilities = capabilities
+--   }
+-- local capabilities = require('cmp_nvim_lsp').default_capabilities()
 cmp.setup({
     snippet = {
         expand = function(args)
-            require('luasnip').lsp_expand(args.body)
+            luasnip.lsp_expand(args.body)
         end,
     },
     mapping = cmp.mapping.preset.insert({
@@ -23,7 +30,14 @@ cmp.setup({
         ['<C-f>'] = cmp.mapping.scroll_docs(4),
         ['<C-Space>'] = cmp.mapping.complete(),
         ['<C-e>'] = cmp.mapping.close(),
-        ['<Tab>'] = cmp.mapping.confirm({
+        ['<Tab>'] = function(fallback)
+            if cmp.visible() then
+                cmp.select_next_item()
+            else
+                fallback()
+            end
+        end,
+        ['<CR>'] = cmp.mapping.confirm({
             behavior = cmp.ConfirmBehavior.Replace,
             select = true
         }),
@@ -51,11 +65,13 @@ cmp.setup({
             compare.order,
         },
     },
-    sources = {
+    sources = cmp.config.sources({
         { name = 'nvim_lsp' },
         { name = 'buffer' },
+        { name = 'path' },
+        { name = 'cmdline' },
         { name = 'cmp_tabnine' },
-    },
+    }),
     formatting = {
         format = function(entry, vim_item)
             -- if you have lspkind installed, you can use it like
@@ -80,6 +96,20 @@ cmp.setup({
     }
 })
 
+cmp.setup.cmdline({ ':' }, {
+    mapping = cmp.mapping.preset.cmdline(),
+    sources = cmp.config.sources({
+        { name = 'path' }
+    }, {
+        { name = 'cmdline' }
+    })
+})
+cmp.setup.cmdline({ '/', '?' }, {
+    mapping = cmp.mapping.preset.cmdline(),
+    sources = {
+        { name = 'buffer' }
+    }
+})
 
 vim.cmd [[
   set completeopt=menuone,noinsert,noselect
