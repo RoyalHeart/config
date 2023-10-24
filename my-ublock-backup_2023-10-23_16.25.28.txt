@@ -1,0 +1,44 @@
+{
+  "timeStamp": 1698053128544,
+  "version": "1.52.2",
+  "userSettings": {
+    "advancedUserEnabled": true,
+    "uiAccentCustom": true,
+    "uiAccentCustom0": "#f75782",
+    "externalLists": "https://abpvn.com/filter/abpvn-iDqE9i.txt?ublock\nhttps://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts",
+    "importedLists": [
+      "https://abpvn.com/filter/abpvn-iDqE9i.txt?ublock",
+      "https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts"
+    ],
+    "popupPanelSections": 63
+  },
+  "selectedFilterLists": [
+    "ublock-filters",
+    "ublock-badware",
+    "ublock-privacy",
+    "ublock-quick-fixes",
+    "ublock-unbreak",
+    "easylist",
+    "https://abpvn.com/filter/abpvn-iDqE9i.txt?ublock",
+    "https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts"
+  ],
+  "hiddenSettings": {},
+  "whitelist": [
+    "100054.connect.garena.com",
+    "about-scheme",
+    "app.fl0.com",
+    "bumcheo.com",
+    "chrome-extension-scheme",
+    "docs.google.com",
+    "edge-scheme",
+    "moz-extension-scheme",
+    "opera-scheme",
+    "vivaldi-scheme",
+    "www.google.com",
+    "wyciwyg-scheme"
+  ],
+  "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
+  "urlFilteringString": "",
+  "hostnameSwitchesString": "no-large-media: behind-the-scene false",
+  "userFilters": "! 2023-04-13 https://animevietsub.in\n||i.imgur.com/qjunL0v.gif$image\n\n! 2023-06-12 https://phimhaymoi.com\n||phimhaymoi.com/wp-content/uploads/2023/04/i9-600x.webp?x23967$image\n||phimhaymoi.com/wp-content/uploads/2023/04/400x300*.web*$image\n||phimhaymoi.com/wp-content/uploads/2023/04/catfish-sum.gif?x23967$image\n||phimhaymoi.com/wp-content/uploads/2023/04/catfish-sum.gif?x23967$image\n||phimhaymoi.com/wp-content/uploads/2023/06/789x729.png?x23967$image\n||phimhaymoi.com/wp-content/uploads/2023/06/GIF-SM66-4-nha%E2%95%A0uy-mo%E2%95%A0%C2%A2%E2%95%A0ui-729x90-1.gif?x23967$image\n||phimhaymoi.com/wp-content/uploads/2023/04/catfish-sum.gif$image\n||phimhaymoi.com/wp-content/uploads/2023/06/789x729.png$image\n||phimhaymoi.com/wp-content/uploads/2023/06/789x729.png?x23967$image\nphimhaymoi.com##[href^=\"https://www.sm611.com/\"] > .alignnone.size-full.wp-image-1484\n||phimhaymoi.com/wp-content/uploads/2023/04/catfish-sum.gif?x23967$image\nphimhaymoi.com##[href^=\"https://789bet.best/\"] > .alignnone.size-full.wp-image-1484\nphimhaymoi.com##[href=\"https://gamebaisumvip.net/\"] > .alignnone.size-full.wp-image-1484\n||phimhaymoi.com/wp-content/uploads/2023/06/SM980.gif?x23967$image\nphimhaymoi.com##.a--d-wrapper > [href=\"https://record.income88.com/_NHIkDUtmVvdIB4xHuyYkGWNd7ZgqdRLk/3/\"]\nphimhaymoi.com##[src=\"https://phimhaymoi.com/wp-content/uploads/2023/06/SM980.gif?x23967\"]\nphimhaymoi.com##[src=\"/wp-content/uploads/2023/04/sumvip-top.webp?x23967\"]\nphimhaymoi.com##[src=\"https://phimhaymoi.com/wp-content/uploads/2023/05/120-400.gif?x23967\"]\nphimhaymoi.com###popmake-1479 > .popmake-close.pum-close\nphimhaymoi.com###popmake-1482 > .popmake-close.pum-close\n"
+}

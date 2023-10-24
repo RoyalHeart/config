@@ -109,14 +109,6 @@ _G.packer_plugins = {
     path = "D:/Config/nvim/packed\\packer\\start\\cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
-  ["cmp-tabnine"] = {
-    after_files = { "D:\\Config\\nvim\\packed\\packer\\opt\\cmp-tabnine\\after\\plugin\\cmp-tabnine.lua" },
-    load_after = {},
-    loaded = true,
-    needs_bufread = false,
-    path = "D:/Config/nvim/packed\\packer\\opt\\cmp-tabnine",
-    url = "https://github.com/tzachar/cmp-tabnine"
-  },
   ["emmet-vim"] = {
     loaded = true,
     path = "D:/Config/nvim/packed\\packer\\start\\emmet-vim",
@@ -261,20 +253,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "D:/Config/nvim/packed\\packer\\start\\vim-startify",
     url = "https://github.com/mhinz/vim-startify"
-  },
-  ["vim-transparent"] = {
-    loaded = true,
-    path = "D:/Config/nvim/packed\\packer\\start\\vim-transparent",
-    url = "https://github.com/tribela/vim-transparent"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Load plugins in order defined by `after`
-time([[Sequenced loading]], true)
-vim.cmd [[ packadd nvim-cmp ]]
-vim.cmd [[ packadd cmp-tabnine ]]
-time([[Sequenced loading]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

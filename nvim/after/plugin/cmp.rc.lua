@@ -8,7 +8,7 @@ local source_mapping = {
     buffer = "[Buffer]",
     nvim_lsp = "[LSP]",
     nvim_lua = "[Lua]",
-    cmp_tabnine = "[TN]",
+    -- cmp_tabnine = "[TN]",
     path = "[Path]",
 }
 
@@ -54,7 +54,7 @@ cmp.setup({
     sorting = {
         priority_weight = 2,
         comparators = {
-            require('cmp_tabnine.compare'),
+            --require('cmp_tabnine.compare'),
             compare.offset,
             compare.exact,
             compare.score,
@@ -70,7 +70,7 @@ cmp.setup({
         { name = 'buffer' },
         { name = 'path' },
         { name = 'cmdline' },
-        { name = 'cmp_tabnine' },
+        --{ name = 'cmp_tabnine' },
     }),
     formatting = {
         format = function(entry, vim_item)

@@ -6,7 +6,7 @@
       "segments": [
         {
           "type": "path",
-          "background": "#35061c",
+          // "background": "#35061c",
           "foreground": "#e488b6",
           "properties": {
             "style": "folder"
@@ -16,33 +16,33 @@
         },
         {
           "type": "git",
-          "background": "#000000",
+          // "background": "#000000",
           "foreground": "#afd6c9",
           "properties": {
             "fetch_stash_count": false,
-            "fetch_status": true,
+            "fetch_status": false,
             "fetch_upstream_icon": false
           },
           "style": "plain",
-          "template": " \ue709 {{ .HEAD }} {{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0}} \uf692 {{ .StashCount }}{{ end }}{{ if gt .WorktreeCount 0}} \uf1bb {{ .WorktreeCount }}{{ end }} "
+          "template": " \ue709 {{ .HEAD }} /* {{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0}} \uf692 {{ .StashCount }}{{ end }}{{ if gt .WorktreeCount 0}} \uf1bb {{ .WorktreeCount }}{{ end }} */ "
         },
         {
           "type": "root",
-          "background": "#6b6b0c",
+          // "background": "#6b6b0c",
           "foreground": "#ffffff",
           "style": "plain",
           "template": " \uf0e7 "
         },
         {
           "type": "dart",
-          "background": "#0d0d0d",
+          // "background": "#0d0d0d",
           "foreground": "#06A4CE",
           "style": "plain",
           "template": " \uE798 {{ .Full }} "
         },
         {
           "type": "java",
-          "background": "#350303",
+          // "background": "#350303",
           "foreground": "#e67b90",
           "style": "plain",
           "template": " \ue738 {{ .Full }} "
@@ -54,13 +54,25 @@
         //   "style": "plain"
         // },
         {
-          "type": "exit",
-          "background": "#095035",
-          "background_templates": ["{{ if gt .Code 0 }}#b3153a{{ end }}"],
-          "foreground": "#ffffff",
+          // "background": "#FFDE57",
+          "foreground": "#26547a",
+          "powerline_symbol": "\ue0b0",
           "properties": {
-            "always_enabled": true
+            "display_mode": "files",
+            "fetch_virtual_env": true
           },
+          "style": "plain",
+          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
+          "type": "python"
+        },
+        {
+          "type": "exit",
+          // "background": "#095035",
+          "foreground_templates": ["{{ if gt .Code 0 }}#b3153a{{ end }}"],
+          "foreground": "#ffffff",
+          // "properties": {
+          //   "always_enabled": true
+          // },
           "style": "plain",
           "template": " \uf188 "
         }
@@ -68,6 +80,6 @@
       "type": "prompt"
     }
   ],
-  "final_space": true,
+  // "final_space": true,
   "version": 3
 }

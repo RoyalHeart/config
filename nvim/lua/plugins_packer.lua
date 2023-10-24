@@ -46,7 +46,7 @@ return require('packer').startup(function(use)
     use 'hrsh7th/cmp-path'                  -- Suggestion source path
     use 'hrsh7th/cmp-cmdline'               -- Suggestion source cmdline
     use { 'L3MON4D3/LuaSnip', tag = '*' }   -- Snippet
-    use { 'tzachar/cmp-tabnine', after = "nvim-cmp", run = 'powershell ./install.ps1', requires = 'hrsh7th/nvim-cmp' }
+    -- use { 'tzachar/cmp-tabnine', after = "nvim-cmp", run = 'powershell ./install.ps1', requires = 'hrsh7th/nvim-cmp' }
 
     -- Code syntax highlight
     use 'yuezk/vim-js'                     -- Javascript

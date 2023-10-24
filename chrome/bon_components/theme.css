@@ -1,0 +1,64 @@
+:root {
+  --lwt-accent-color: #1d0c13;
+  --rose-quartz-foreground: #e76680;
+  --selected-text-background: #551234;
+}
+
+#navigator-toolbox {
+  border-bottom: none !important;
+}
+#navigator-toolbox-background {
+  height: 30px;
+}
+
+toolbar .toolbarbutton-1 {
+  color: var(--rose-quartz-foreground) !important;
+}
+toolbarbutton {
+  color: var(--rose-quartz-foreground) !important;
+}
+.titlebar-button {
+  padding: 9px 15px !important;
+}
+.toolbarbutton-animatable-box,
+.toolbarbutton-1 {
+  color: var(--rose-quartz-foreground) !important;
+}
+
+#identity-box,
+#tracking-protection-icon-container {
+  fill: var(--rose-quartz-foreground) !important;
+}
+
+#titlebar {
+  background: var(--lwt-accent-color) !important;
+}
+
+/* Sets the toolbar color */
+toolbar#nav-bar {
+  background: var(--lwt-accent-color) !important;
+  box-shadow: none !important;
+}
+
+/* Sets the URL bar color */
+#urlbar {
+  background: var(--lwt-accent-color) !important;
+}
+#urlbar-background {
+  background: var(--lwt-accent-color) !important;
+  border: none !important;
+}
+#urlbar-input-container {
+  border: none !important;
+}
+
+#page-action-buttons {
+  color: var(--rose-quartz-foreground) !important;
+  fill: var(--rose-quartz-foreground) !important;
+}
+
+/* saved bookmarks icon */
+#star-button[starred] {
+  fill-opacity: 1;
+  fill: var(--rose-quartz-foreground) !important;
+}
