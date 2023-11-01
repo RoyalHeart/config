@@ -1,0 +1,279 @@
+: w
+: q
+: q!
+: D
+% ls
+$ ls
+: D
+: cd D:/
+: ls
+: ! ls
+: ! cd
+: ! ll
+: ! Get-Item
+: ?
+: cd D
+: cd D:/
+: cd OneDrive
+: cd C:
+: cd C:/
+: cd D:/
+: help
+: h
+: delete
+: delete 
+: q!
+: w
+: q
+: x
+: exit
+: xh
+: D:/
+: help
+: h
+: d
+: D
+: cd D:\\Bon\\2.Work\\
+: cd D:\\Bon\\2.Work\\
+: cd D:\\Bon\\2.Work\\
+$ pwd
+: pwd
+$ pwd
+% pwd
+: cd 
+: cd D:\\Bon\\2.Work\\
+! pwd
+! pwd
+! whoami
+! pwsh
+: pwsh
+$ pwsh
+: pwsh
+! pwsh
+! pwsh
+! pwd
+: cd ~\\.config\\lf\\
+! pwd
+: cd ~\\.config\\lf
+: cd C:\Users\Admin\AppData\Local\lf
+: cd C:\\Users\\Admin\\AppData\\Local\\lf\\
+$ nvim
+: cd C:\\Users\\Admin\\AppData\\Local\\lf\\
+! pwd
+: new
+: touch 
+$ touch colors
+$ rm %f% 
+: cd C:\\Users\\Admin\\AppData\\Local\\lf\\
+: cd D:\\Bon\\Programing\\
+$ mkdir CustomBatchScript
+$ mv ~\\getProcessOnPort.bat D:\\Bon\\Programing\\CustomBatchScript\\getProcessOnPort.bat
+: cd D:\\Bon\\2.Work\\
+$ start .
+: q
+: D
+: cd  D;
+: cd D:
+: cd D:/
+: cd C:/
+: ! code .
+: !!
+: CD D:/
+: cd D:/
+: ! code .
+: q
+: ! code whkdrc 
+$ code lfrc 
+$ code lfrc 
+$ ls
+$ ls
+$ ping
+$ ls
+! ls
+$ ls
+$ code .
+$ touch test
+: q
+: delete
+: trash
+: delete
+: i
+: open
+$ ls
+$ ls!
+$ !ls
+! ls
+$ ls
+: q
+$ ls
+: mark-remove 
+: D
+: D:/
+: Cd D:/
+: cd
+: cd D:/
+! e
+: delete
+: delete
+: r
+: reload 
+: delete 
+: delete 
+: delete 
+$ ls
+: reload
+: reload
+: touch lfrc.ps1
+! touch lfrc.ps1
+! code .
+: q
+: reload
+: q
+: version
+: v
+: delete
+: set icons
+: set icons
+$ ls
+: reload
+: open
+: open
+: open
+: delete
+$ ls
+: q
+: nvim
+: ! nvim
+$ nvim
+: open
+: nvim
+! nvim $f
+: q
+: q
+: more
+! more f
+! more files
+: mineopen
+: zip
+: zip
+: zip
+: zip a
+$ ls
+$ code .
+: select
+: select lfrc
+: select lfrc
+: delete
+: delete
+! delete
+: !delete
+: delete!
+: delete
+: delete 
+: set icons
+: D:
+: cd D:/
+: mark-remove d
+: invert
+: copy
+: unselect 
+: z bon
+! z bon
+! z vs
+: clear 
+: clear 
+: delete 
+: delete
+: delete 
+: delete 
+: delete 
+: delete 
+: delete 
+: delete 
+! touch test.ps1
+: unselect 
+: up
+: zip
+! touch test
+! touch test
+$ tocuh
+$ touch test
+! touch test
+! touch test
+$ set
+$ set -f
+$ print "hi"
+$ print
+$ echo "hi
+$ echo "hih"
+: delete 
+: open
+$ start .
+: start
+$ start Adobe Premiere Pro.exe
+: open
+: open
+: open
+: open
+: inspect 
+$ touch test
+: reload
+$ touch test
+$ touch test
+! pwd
+% mkdir hello
+: push 
+% touch hello
+% touch hallo.
+% touch he
+: redraw 
+% touch helloo
+: redraw 
+: read
+: read icons 
+: ll
+: read 
+: l
+% touch hello
+: delete 
+% touch hello
+: delete 
+% touch test
+: reload
+: redraw
+! more uid 
+% more uid
+& more uid
+$ more uid
+! less uid
+% touch hello
+% touch hello
+% touch hello
+% touch hello
+% touch hello
+% touch 
+: trash 
+: set hidden!
+: set hidden
+% touch hello
+: trash 
+: trash 
+: trash 
+: trash 
+: trash 
+: trash 
+: trash 
+: trash 
+% touch hello
+: echo
+: echo he
+$ pwsh;$env:f
+$ pwsh$env:f
+% touch hello
+! {{delete}}y
+: delete 
+: delete 
+% touch hello
+: redraw
+% touch hello
+: trash 

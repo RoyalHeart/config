@@ -1,0 +1,71 @@
+#root {
+  /* background-image: url(../images/Steins_Gate.png);
+  background-size: 100vw; */
+  --newtab-background-color-secondary: #110a0d !important;
+}
+.ds-outer-wrapper-breakpoint-override main {
+  width: 80vw !important;
+  /* background-image: url(../images/Steins_Gate.png); */
+  background-size: 100%;
+}
+.collapsible-section {
+  padding: 0px 25px !important;
+}
+.outer-wrapper {
+  padding: 0 !important;
+  padding-top: 10px !important;
+}
+.search-wrapper .logo-and-wordmark {
+  margin: 0 !important;
+}
+.search-wrapper {
+  padding: 0 !important;
+}
+.top-sites-list {
+  margin-left: 95px !important;
+}
+.top-site-button {
+  height: 400px;
+  padding-top: 250px !important;
+}
+.top-site-outer {
+  width: 115px !important;
+  padding: 0 !important;
+  border-radius: 8px;
+  display: inline-block;
+  margin: 2px !important;
+  height: 400px !important;
+  background-size: 100%;
+}
+.top-site-outer:nth-child(1) {
+  background-image: url(../images/1.png) !important;
+}
+.top-site-outer:nth-child(2) {
+  background-image: url(../images/2.png) !important;
+}
+.top-site-outer:nth-child(3) {
+  background-image: url(../images/3.png) !important;
+}
+.top-site-outer:nth-child(4) {
+  background-image: url(../images/4.png) !important;
+}
+.top-site-outer:nth-child(5) {
+  background-image: url(../images/5.png) !important;
+}
+.top-site-outer:nth-child(6) {
+  background-image: url(../images/6.png) !important;
+}
+.top-site-outer:nth-child(7) {
+  background-image: url(../images/7.png) !important;
+}
+.top-site-outer:nth-child(8) {
+  background-image: url(../images/8.png) !important;
+}
+
+.tile {
+  background: none !important;
+}
+.top-site-outer .title {
+  font-size: 20px !important;
+  padding-top: 55px !important;
+}

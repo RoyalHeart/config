@@ -11,4 +11,7 @@ function ln ($target, $link) {
 function sudo ($command) { 
     Start-Process pwsh "-noe -c $command" -Verb Runas
 }
+function rename ($target, $link) {
+    Rename-Item $target $link
+}
 function wl { Set-Location "D:\Bon\2.Work" && code ".\UNIT.md"}

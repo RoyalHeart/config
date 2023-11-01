@@ -1,13 +1,16 @@
 :root {
-  --lwt-accent-color: #1d0c13;
+  --lwt-accent-color: #1d0c13 !important;
+  --selected-text-background: #551234 !important;
+  --toolbar-bgcolor: #2b121c !important;
+  --urlbar-height: 32px !important;
+  --urlbar-toolbar-height: 30px !important;
+
+  /*custom value*/
   --rose-quartz-foreground: #e76680;
-  --selected-text-background: #551234;
 }
 
 #navigator-toolbox {
   border-bottom: none !important;
-}
-#navigator-toolbox-background {
   height: 30px;
 }
 
@@ -55,6 +58,23 @@ toolbar#nav-bar {
 #page-action-buttons {
   color: var(--rose-quartz-foreground) !important;
   fill: var(--rose-quartz-foreground) !important;
+}
+
+/* open in container color*/
+:root[lwt-toolbar-field-brighttext]
+  #urlbar:not([focused="true"])
+  .urlbar-addon-page-action[style*=".svg"]
+  > .urlbar-icon,
+:root[lwt-toolbar-field-focus-brighttext]
+  #urlbar[focused="true"]
+  .urlbar-addon-page-action[style*=".svg"]
+  > .urlbar-icon {
+  filter: invert(51%) sepia(93%) saturate(652%) hue-rotate(308deg)
+    brightness(94%) contrast(93%) !important;
+}
+.urlbar-icon {
+  filter: invert(51%) sepia(93%) saturate(652%) hue-rotate(308deg)
+    brightness(94%) contrast(93%) !important;
 }
 
 /* saved bookmarks icon */
