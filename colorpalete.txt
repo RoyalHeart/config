@@ -1,7 +1,20 @@
-background: 1a1117
-text: e2c5d2
-blink_cursor: ecafc9
-key_word: db6698
-comment: 777575
-number, variable: b274cc
-function: 9ecba3
+# editor
+background: #1a1117
+text: #e2c5d2
+blink_cursor: #ecafc9
+key_word: #db6698
+comment: #777575
+number, variable: #b274cc
+function: #9ecba3
+
+# terminal
+black:   "#767676"
+blue:    "#3B78FF"
+cyan:    "#61D6D6"
+purple:  "#B4009E"
+red:     "#E74789"
+white:   "#F2F2F2"
+yellow:  "#F3F9B2"
+green:   "#23BE51"
+
+

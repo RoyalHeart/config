@@ -277,3 +277,9 @@ $ pwsh$env:f
 : redraw
 % touch hello
 : trash 
+: trash 
+! rm hello 
+% touch komorebi.ps1
+% mkdir alacritty
+: cd C:/
+: cd C:/

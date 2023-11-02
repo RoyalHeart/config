@@ -1,0 +1,79 @@
+window:
+  dimensions:
+    columns: 0
+    lines: 0
+  position:
+    x: 0
+    y: 0
+  padding:
+    x: 2
+    y: 2
+  decorations: full
+  opacity: 0.8
+
+scrolling:
+  history: 10000
+
+font:
+  normal:
+    family: CaskaydiaCove Nerd Font Mono
+  bold:
+    style: Normal
+  italic:
+    style: Italic
+  # Point size
+  size: 12.0
+
+# Colors (Roze Quartz)
+colors:
+  # Default colors
+  primary:
+    foreground: "#FFBFDD"
+    background: "#0A0104"
+  # Normal colors
+  normal:
+    black:   '#1d1f21'
+    red:     "#E74789"
+    green:   "#13A10E"
+    yellow:  "#AD8C1B"
+    blue:    '#81a2be'
+    magenta: '#b294bb'
+    cyan:    '#8abeb7'
+    white:   '#c5c8c6'
+    # green:   "#b5bd68"
+  # Bright colors
+  bright: 
+    black:   "#767676"
+    blue:    "#3B78FF"
+    cyan:    "#61D6D6"
+    purple:  "#B4009E"
+    red:     "#E74789"
+    white:   "#F2F2F2"
+    yellow:  "#F3F9B2"
+    green:   "#23BE51"
+    #  black:   '#666666'
+    #  red:     '#d54e53'
+    #  green:   '#b9ca4a'
+    #  yellow:  '#e7c547'
+    #  blue:    '#7aa6da'
+    #  magenta: '#c397d8'
+    #  cyan:    '#70c0b1'
+    #  white:   '#eaeaea'
+cursor:
+  # Cursor style
+  style:
+    shape: Beam
+    blinking: On
+
+shell:
+  program: pwsh
+  args:
+    - --login --nologo
+
+working_directory: C:\Users\Admin
+
+mouse:
+  hide_when_typing: true
+
+key_bindings:
+  - { key: T, mods: Control, action: CreateNewWindow }

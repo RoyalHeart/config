@@ -61,8 +61,8 @@ cmd open_file ${{
 }}
 
 # mkdir command. See wiki if you want it to select created dir
-map a :push %mkdir<space>
-map n :push %touch<space>
+map A :push %mkdir<space>
+map a :push %touch<space>
 
 
 # make sure trash folder exists
