@@ -6,9 +6,11 @@
 @import url("bon_components/hide_tabbar.css");
 @import url("bon_components/hide_sidebar_auto.css");
 @import url("bon_components/theme.css");
+@import url("bon_components/context_menu.css");
+@import url("bon_components/menu.css");
 
-@import url("components/ogx_menu.css");
-@import url("components/ogx_contextual-menu.css");
+/* @import url("components/ogx_menu.css"); */
+/* @import url("components/ogx_contextual-menu.css"); */
 /* @import url("components/ogx_root.css");
 @import url("components/ogx_root-personal.css");
 @import url("components/ogx_toolbar-icons.css");

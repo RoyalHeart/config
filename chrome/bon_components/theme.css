@@ -21,7 +21,7 @@ toolbarbutton {
   color: var(--rose-quartz-foreground) !important;
 }
 .titlebar-button {
-  padding: 9px 15px !important;
+  padding: 7px 15px !important;
 }
 .toolbarbutton-animatable-box,
 .toolbarbutton-1 {
@@ -81,4 +81,14 @@ toolbar#nav-bar {
 #star-button[starred] {
   fill-opacity: 1;
   fill: var(--rose-quartz-foreground) !important;
+}
+
+/* search bar*/
+.urlbarView-row:hover > .urlbarView-row-inner {
+  background-color: var(--selected-text-background) !important;
+}
+.urlbarView-row:not([type="tip"], [type="dynamic"])[selected]
+  > .urlbarView-row-inner,
+.urlbarView-row-inner[selected] {
+  background-color: var(--selected-text-background) !important;
 }
