@@ -8,8 +8,8 @@ require('color') -- has custom highlight
 
 -- Other setting/plugin:
 vim.cmd [[
-for setting_file in split(glob(stdpath('config').'/settings/*.vim'))
-  execute 'source' setting_file
-endfor
+ for setting_file in split(glob(stdpath('config').'/settings/*.vim'))
+   execute 'source' setting_file
+ endfor
 ]]
 end

@@ -37,4 +37,3 @@ imap('jk', '<Esc>') --to escape
 vmap('j', 'gj')
 vmap('k', 'gk')
 vmap('<C-_>', ':Commentary<CR>') --toggle comment
-vmap('<C-_>', ':Commentary<CR>') --toggle comment

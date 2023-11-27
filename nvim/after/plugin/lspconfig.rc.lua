@@ -22,7 +22,7 @@ local on_attach = function(client, bufnr)
     buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
     buf_set_keymap('n', '<leader>.', '<cmd>lua vim.lsp.buf.code_actions()<CR>', opts)
     buf_set_keymap('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
-    buf_set_keymap('n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
+    buf_set_keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
 end
 
 protocol.CompletionItemKind = {
@@ -78,21 +78,21 @@ lspconfig.sourcekit.setup {
 }
 
 lspconfig.lua_ls.setup {
-    capabilities = capabilities,
+--     -- capabilities = capabilities,
     on_attach = on_attach,
-    settings = {
-        Lua = {
-            diagnostics = {
-                -- Get the language server to recognize the `vim` global
-                globals = { 'vim' },
-            },
-            workspace = {
-                -- Make the server aware of Neovim runtime files
-                library = vim.api.nvim_get_runtime_file("", true),
-                checkThirdParty = false
-            },
-        },
-    },
+--     -- settings = {
+--     --     Lua = {
+--     --         diagnostics = {
+--     --             -- Get the language server to recognize the `vim` global
+--     --             globals = { 'vim' },
+--     --         },
+--     --         workspace = {
+--     --             -- Make the server aware of Neovim runtime files
+--     --             library = vim.api.nvim_get_runtime_file("", true),
+--     --             checkThirdParty = false
+--     --         },
+--     --     },
+--     -- },
 }
 
 lspconfig.tailwindcss.setup {}

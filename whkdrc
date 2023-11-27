@@ -3,11 +3,12 @@
 # Reload whkd configuration
 # alt + o                 : taskkill /f /im whkd.exe && start /b whkd # if shell is cmd
 alt + o                 : (taskkill /f /im whkd.exe) -and (Start-Process whkd -WindowStyle hidden) # if shell is pwsh / powershell
+alt + q                 : (taskkill /f /im whkd.exe) -and (Start-Process whkd -WindowStyle hidden) # if shell is pwsh / powershell
 alt + shift + o         : komorebic reload-configuration
 
 # App shortcuts - these require shell to be pwsh / powershell
 # The apps will be focused if open, or launched if not open
-alt + b                 : if ($wshell.AppActivate('Firefox') -eq $False) { start firefox }
+alt + b                 : if (!(Get-Process firefox -ErrorAction SilentlyContinue)) { start firefox }
 alt + return            : start alacritty
 
 # Focus windows
@@ -41,7 +42,9 @@ alt + shift + oem_plus  : komorebic resize-axis vertical increase
 alt + shift + oem_minus : komorebic resize-axis vertical decrease
 
 # Manipulate windows
-alt + t                 : komorebic toggle-float
+alt + f                 : komorebic toggle-float
+alt + t                 : komorebic toggle-tiling
+alt + m                 : komorebic manage
 alt + shift + f         : komorebic toggle-monocle
 
 # Window manager options

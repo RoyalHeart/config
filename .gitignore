@@ -1,2 +1,5 @@
 /nvim/plugged
 /nvim/packed
+.yasb/yasb.log
+lf/history
+lf/marks

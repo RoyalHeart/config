@@ -39,7 +39,7 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug('L3MON4D3/LuaSnip', { ['tag'] = 'v<CurrentMajor>.*' })
-Plug('tzachar/cmp-tabnine', { ['do'] = 'powershell ./install.ps1' })
+-- Plug('tzachar/cmp-tabnine', { ['do'] = 'powershell ./install.ps1' })
 
 -- Code syntax highlight
 Plug 'yuezk/vim-js' -- Javascript
