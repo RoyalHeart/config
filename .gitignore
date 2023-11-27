@@ -1,5 +1,8 @@
-/nvim/plugged
-/nvim/packed
-.yasb/yasb.log
 lf/history
 lf/marks
+
+nvim/plugged
+nvim/packed
+nvim/plugin/packer_compiled.lua
+
+.yasb/yasb.log
