@@ -65,7 +65,7 @@ See the above repository for updates as well as full license text. */
 
 .sidebar-panel {
   /* background-color: transparent !important; */
-  /* color: var(--newtab-text-primary-color) !important; */
+  color: var(--newtab-text-primary-color) !important;
 }
 
 .sidebar-panel #search-box {

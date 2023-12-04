@@ -4,9 +4,10 @@
   --toolbar-bgcolor: #2b121c !important;
   --urlbar-height: 32px !important;
   --urlbar-toolbar-height: 30px !important;
-
+  --newtab-background-color: var(--rose-quartz-background) !important;
   /*custom value*/
   --rose-quartz-foreground: #e76680;
+  --rose-quartz-background: #110a0d;
 }
 
 #navigator-toolbox {
@@ -14,6 +15,24 @@
   height: 30px;
 }
 
+/* Toolbar icon as svg */
+#downloads-button,
+#PanelUI-menu-button,
+#back-button,
+#forward-button,
+#stop-reload-button,
+#home-button,
+#sync-button,
+#fxa-toolbar-menu-button,
+#unified-extensions-button {
+  filter: invert(51%) sepia(93%) saturate(652%) hue-rotate(308deg)
+    brightness(94%) contrast(93%) !important;
+}
+
+.toolbarbutton {
+  filter: invert(51%) sepia(93%) saturate(652%) hue-rotate(308deg)
+    brightness(94%) contrast(93%) !important;
+}
 toolbar .toolbarbutton-1 {
   color: var(--rose-quartz-foreground) !important;
 }
@@ -91,4 +110,9 @@ toolbar#nav-bar {
   > .urlbarView-row-inner,
 .urlbarView-row-inner[selected] {
   background-color: var(--selected-text-background) !important;
+}
+
+::selection {
+  color: White !important;
+  background: var(--selected-text-background) !important;
 }

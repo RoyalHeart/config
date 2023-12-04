@@ -5,6 +5,8 @@
 @import url(bon_components/theme.css);
 @import url(bon_components/uc_hide_search.css);
 @import url(bon_components/uc_steingate.css);
+@import url(components/ogx_root-personal.css);
+@import url(components/ogx_UC-settings-addons-pages.css);
 /* @import url(components/ogx_UC-newtabpage.css); */
 /* @import url(components/ogx_UC-settings-addons-pages.css); */
 /* @import url(components/ogx_UC-addons-store.css); */
