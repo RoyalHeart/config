@@ -54,17 +54,23 @@ if vim.fn.has('win32') then
         use 'MaxMEllon/vim-jsx-pretty'         -- JSX/React
         use 'jackguo380/vim-lsp-cxx-highlight' -- C/C++
         use 'uiiaoo/java-syntax.vim'           -- Java
-        use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+        use {
+            'nvim-treesitter/nvim-treesitter',
+            run = function()
+                local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+                ts_update()
+            end,
+        }
         use 'norcalli/nvim-colorizer.lua'      -- Make color string show it color
 
         -- Useful shortcut
         use 'tpope/vim-commentary' -- Comment code
-        use {
-            'kylechui/nvim-surround',
-            tag = '*',
-            config = function()
-                require("nvim-surround").setup({})
-            end } -- Change surround
+        --use {
+        --    'kylechui/nvim-surround',
+        --    tag = '*',
+        --    config = function()
+        --        require("nvim-surround").setup({})
+        --    end } -- Change surround
 
         -- Source code version control
         use 'tpope/vim-fugitive' -- Git infomation
