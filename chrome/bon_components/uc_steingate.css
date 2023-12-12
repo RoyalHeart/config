@@ -22,7 +22,8 @@
   padding: 0 !important;
 }
 .top-sites-list {
-  margin-left: 95px !important;
+  display: flex !important;
+  justify-content: center !important;
 }
 .top-site-button {
   height: 400px;
