@@ -13,10 +13,22 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 "let NERDTreeMapOpenInTab='<ENTER>'
 
 " Git status icon
+" let g:NERDTreeGitStatusIndicatorMapCustom = {
+"                 \ 'Modified'  :'✹',
+"                 \ 'Staged'    :'✚',
+"                 \ 'Untracked' :'✭',
+"                 \ 'Renamed'   :'➜',
+"                 \ 'Unmerged'  :'═',
+"                 \ 'Deleted'   :'✖',
+"                 \ 'Dirty'     :'✗',
+"                 \ 'Ignored'   :'☒',
+"                 \ 'Clean'     :'✔︎',
+"                 \ 'Unknown'   :'?',
+"                 \ }
 let g:NERDTreeGitStatusIndicatorMapCustom = {
-                \ 'Modified'  :'✹',
-                \ 'Staged'    :'✚',
-                \ 'Untracked' :'✭',
+                \ 'Modified'  :'M',
+                \ 'Staged'    :'S',
+                \ 'Untracked' :'U',
                 \ 'Renamed'   :'➜',
                 \ 'Unmerged'  :'═',
                 \ 'Deleted'   :'✖',

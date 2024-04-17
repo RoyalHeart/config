@@ -21,7 +21,6 @@ if vim.fn.has('win32') then
         use 'preservim/nerdTree'          -- File browser
         use 'Xuyuanp/nerdtree-git-plugin' -- Git status
         use 'ryanoasis/vim-devicons'      -- Icon
-        use 'unkiwii/vim-nerdtree-sync'   -- Sync current file
 
         -- File search
         use 'nvim-lua/plenary.nvim'         -- work with telescope
@@ -61,7 +60,7 @@ if vim.fn.has('win32') then
                 ts_update()
             end,
         }
-        use 'norcalli/nvim-colorizer.lua'      -- Make color string show it color
+        use 'norcalli/nvim-colorizer.lua' -- Make color string show it color
 
         -- Useful shortcut
         use 'tpope/vim-commentary' -- Comment code
