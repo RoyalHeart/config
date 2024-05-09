@@ -1,5 +1,7 @@
 lf/history
 lf/marks
+lf/files
+lf/tags
 
 nvim/plugged
 nvim/packed
