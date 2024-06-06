@@ -5,7 +5,7 @@ See the above repository for updates as well as full license text. */
 /* The border controlling sidebar width will be removed so you'll need to modify these values to change width */
 
 #sidebar-box {
-  --uc-sidebar-width: 60px;
+  --uc-sidebar-width: 1px;
   --uc-sidebar-hover-width: 210px;
   --uc-autohide-sidebar-delay: 100ms; /* Wait 0.6s before hiding sidebar */
   position: relative;
@@ -32,6 +32,10 @@ See the above repository for updates as well as full license text. */
 
 #main-window[sizemode="fullscreen"] #sidebar-box {
   --uc-sidebar-width: 1px;
+}
+
+#main-window[sizemode="normal"] #sidebar-box {
+  --uc-sidebar-width: 60px;
 }
 
 #sidebar-splitter {

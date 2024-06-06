@@ -19,6 +19,12 @@
   top: 0.5px;
   right: 0px;
 }
+
 #sidebar-header {
   display: none;
+}
+
+#nav-bar {
+  margin-right: 120px;
+  margin-left: 35px;
 }
