@@ -1,0 +1,12 @@
+keycode 43 = h H Left H Left Hstroke
+keycode 44 = j J Down J Down J
+keycode 45 = k K Up K Up ampersand
+keycode 46 = l L Right L Right Lstroke
+
+! right alt as Mode_switch
+keycode 108 = Mode_switch 
+
+clear lock
+clear control
+add control = Caps_Lock Control_L Control_R
+keycode 66 = Control_L

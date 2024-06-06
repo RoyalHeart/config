@@ -1,7 +1,7 @@
 window:
   dimensions:
-    columns: 0
-    lines: 0
+    columns: 100
+    lines: 30
   position:
     x: 0
     y: 0
@@ -65,15 +65,20 @@ cursor:
     blinking: On
 
 shell:
-  program: pwsh
-  args:
-    - --login --nologo
+  program: /bin/zsh
+  # args:
+  #   - --login --nologo
 
-working_directory: C:\Users\Admin
+working_directory: /home/tam
 
 mouse:
   hide_when_typing: true
 
 key_bindings:
-  - { key: T, mods: Control, action: CreateNewWindow }
-  - { key: Slash,   mods: Control,       chars: "\x1f" }
+  - { key: T,       mods: Control, action: CreateNewWindow }
+  - { key: Slash,   mods: Control, chars: "\x1f" }
+  - { key: C,       mods: Control, action: Copy }
+  - { key: C, mods: Control|Shift, chars: "\x03" }
+  - { key: V,       mods: Control, action: Paste }
+  - { key: A,       mods: Control, action: Paste }
+  # - { key: A,       mods: Control, action: Select  }
