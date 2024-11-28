@@ -27,5 +27,5 @@ $PSStyle.FileInfo.Directory ="`e[91m"
 
 .$env:USERPROFILE\Documents\PowerShell\user_profile.ps1
 
-oh-my-posh --init --config C:\Users\Admin\Documents\PowerShell\ohMyPoshTHTtheme.json | Invoke-Expression
+oh-my-posh init pwsh --config D:\config\ohmyposh\rose-quartz.json | Invoke-Expression
 

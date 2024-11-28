@@ -2,7 +2,7 @@
 //https://github.com/arkenfox/user.js/blob/master/user.js
 /****************************************************************************
  * SECTION: NETWORK                                                         *
-****************************************************************************/
+ ****************************************************************************/
 
 // PREF: use bigger packets
 // Reduce Firefox's CPU usage by requiring fewer application-to-driver data transfers.
@@ -12,11 +12,17 @@ user_pref("network.buffer.cache.size", 262144); // 256 kb; default=32768 (32 kb)
 user_pref("network.buffer.cache.count", 128); // default=24
 
 // DNS
-user_pref("network.trr.uri", "https://adguard.thtam.freemyip.com/dns-query/thtam-laptop");
-user_pref("network.trr.custom_uri", "https://adguard.thtam.freemyip.com/dns-query/thtam-laptop");
+user_pref(
+  "network.trr.uri",
+  "https://adguard.thtam.freemyip.com:4433/dns-query/thtam-laptop"
+);
+user_pref(
+  "network.trr.custom_uri",
+  "https://adguard.thtam.freemyip.com:4433/dns-query/thtam-laptop"
+);
 user_pref("network.trr.mode", 3); // most secure only through defined DNS
 
-// PREF: increase TLS token caching 
+// PREF: increase TLS token caching
 user_pref("network.ssl_tokens_cache_capacity", 10240); // default=2048; more TLS token caching (fast reconnects)
 
 /** MEDIA CACHE ***/
@@ -133,12 +139,15 @@ user_pref("app.normandy.api_url", "");
 /* 0350: disable Crash Reports ***/
 user_pref("breakpad.reportURL", "");
 user_pref("browser.tabs.crashReporting.sendReport", false); // [FF44+]
-   // user_pref("browser.crashReports.unsubmittedCheck.enabled", false); // [FF51+] [DEFAULT: false]
+// user_pref("browser.crashReports.unsubmittedCheck.enabled", false); // [FF51+] [DEFAULT: false]
 /* 0351: enforce no submission of backlogged Crash Reports [FF58+]
  * [SETTING] Privacy & Security>Firefox Data Collection & Use>Allow Firefox to send backlogged crash reports  ***/
 user_pref("browser.crashReports.unsubmittedCheck.autoSubmit2", false); // [DEFAULT: false]
 
-user_pref("_user.js.parrot", "START: Oh yes, the Norwegian Blue... what's wrong with it?");
+user_pref(
+  "_user.js.parrot",
+  "START: Oh yes, the Norwegian Blue... what's wrong with it?"
+);
 
 /*** [SECTION 0100]: STARTUP ***/
 user_pref("_user.js.parrot", "0100 syntax error: the parrot's dead!");
@@ -164,11 +173,17 @@ user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false); //
 user_pref("browser.newtabpage.activity-stream.default.sites", "");
 
 /*** [SECTION 0200]: GEOLOCATION ***/
-user_pref("_user.js.parrot", "0200 syntax error: the parrot's definitely deceased!");
+user_pref(
+  "_user.js.parrot",
+  "0200 syntax error: the parrot's definitely deceased!"
+);
 /* 0201: use Mozilla geolocation service instead of Google if permission is granted [FF74+]
  * Optionally enable logging to the console (defaults to false) ***/
-user_pref("geo.provider.network.url", "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%");
-   // user_pref("geo.provider.network.logging.enabled", true); // [HIDDEN PREF]
+user_pref(
+  "geo.provider.network.url",
+  "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%"
+);
+// user_pref("geo.provider.network.logging.enabled", true); // [HIDDEN PREF]
 /* 0202: disable using the OS's geolocation service ***/
 user_pref("geo.provider.ms-windows-location", false); // [WINDOWS]
 user_pref("geo.provider.use_corelocation", false); // [MAC]
@@ -176,7 +191,10 @@ user_pref("geo.provider.use_gpsd", false); // [LINUX] [HIDDEN PREF]
 user_pref("geo.provider.use_geoclue", false); // [FF102+] [LINUX]
 
 /*** [SECTION 0300]: QUIETER FOX ***/
-user_pref("_user.js.parrot", "0300 syntax error: the parrot's not pinin' for the fjords!");
+user_pref(
+  "_user.js.parrot",
+  "0300 syntax error: the parrot's not pinin' for the fjords!"
+);
 /** RECOMMENDATIONS ***/
 /* 0320: disable recommendation pane in about:addons (uses Google Analytics) ***/
 user_pref("extensions.getAddons.showPane", false); // [HIDDEN PREF]
@@ -259,7 +277,7 @@ user_pref("security.pki.crlite_mode", 2);
 
 /** MIXED CONTENT ***/
 /* 1241: disable insecure passive content (such as images) on https pages ***/
-   // user_pref("security.mixed_content.block_display_content", true); // Defense-in-depth (see 1244)
+// user_pref("security.mixed_content.block_display_content", true); // Defense-in-depth (see 1244)
 /* 1244: enable HTTPS-Only mode in all windows
  * When the top-level is HTTPS, insecure subresources are also upgraded (silent fail)
  * [SETTING] to add site exceptions: Padlock>HTTPS-Only mode>On (after "Continue to HTTP Site")
@@ -267,9 +285,9 @@ user_pref("security.pki.crlite_mode", 2);
  * [TEST] http://example.com [upgrade]
  * [TEST] http://httpforever.com/ | http://http.rip [no upgrade] ***/
 user_pref("dom.security.https_only_mode", true); // [FF76+]
-   // user_pref("dom.security.https_only_mode_pbm", true); // [FF80+]
+// user_pref("dom.security.https_only_mode_pbm", true); // [FF80+]
 /* 1245: enable HTTPS-Only mode for local resources [FF77+] ***/
-   // user_pref("dom.security.https_only_mode.upgrade_local", true);
+// user_pref("dom.security.https_only_mode.upgrade_local", true);
 /* 1246: disable HTTP background requests [FF82+]
  * When attempting to upgrade, if the server doesn't respond within 3 seconds, Firefox sends
  * a top-level HTTP request without path in order to check if the server supports HTTPS or not
@@ -310,7 +328,7 @@ user_pref("privacy.userContext.ui.enabled", true);
 /* 1702: set behavior on "+ Tab" button to display container menu on left click [FF74+]
  * [NOTE] The menu is always shown on long press and right click
  * [SETTING] General>Tabs>Enable Container Tabs>Settings>Select a container for each new tab ***/
-   // user_pref("privacy.userContext.newTabContainerOnLeftClick.enabled", true);
+// user_pref("privacy.userContext.newTabContainerOnLeftClick.enabled", true);
 
 /*** [SECTION 2000]: PLUGINS / MEDIA / WEBRTC ***/
 user_pref("_user.js.parrot", "2000 syntax error: the parrot's snuffed it!");
@@ -324,32 +342,38 @@ user_pref("media.peerconnection.ice.default_address_only", true);
 /* 2004: force exclusion of private IPs from ICE candidates [FF51+]
  * [SETUP-HARDEN] This will protect your private IP even in TRUSTED scenarios after you
  * grant device access, but often results in breakage on video-conferencing platforms ***/
-   // user_pref("media.peerconnection.ice.no_host", true);
+// user_pref("media.peerconnection.ice.no_host", true);
 /* 2020: disable GMP (Gecko Media Plugins)
  * [1] https://wiki.mozilla.org/GeckoMediaPlugins ***/
-   // user_pref("media.gmp-provider.enabled", false);
+// user_pref("media.gmp-provider.enabled", false);
 
 /*** [SECTION 2400]: DOM (DOCUMENT OBJECT MODEL) ***/
-user_pref("_user.js.parrot", "2400 syntax error: the parrot's kicked the bucket!");
+user_pref(
+  "_user.js.parrot",
+  "2400 syntax error: the parrot's kicked the bucket!"
+);
 /* 2402: prevent scripts from moving and resizing open windows ***/
 user_pref("dom.disable_window_move_resize", true);
 
 /*** [SECTION 2600]: MISCELLANEOUS ***/
-user_pref("_user.js.parrot", "2600 syntax error: the parrot's run down the curtain!");
+user_pref(
+  "_user.js.parrot",
+  "2600 syntax error: the parrot's run down the curtain!"
+);
 /* 2603: remove temp files opened from non-PB windows with an external application
  * [1] https://bugzilla.mozilla.org/buglist.cgi?bug_id=302433,1738574 ***/
 user_pref("browser.download.start_downloads_in_tmp_dir", true); // [FF102+]
 user_pref("browser.helperApps.deleteTempFileOnExit", true);
 /* 2606: disable UITour backend so there is no chance that a remote page can use it ***/
 user_pref("browser.uitour.enabled", false);
-   // user_pref("browser.uitour.url", ""); // Defense-in-depth
+// user_pref("browser.uitour.url", ""); // Defense-in-depth
 /* 2608: reset remote debugging to disabled
  * [1] https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/16222 ***/
 user_pref("devtools.debugger.remote-enabled", false); // [DEFAULT: false]
 /* 2615: disable websites overriding Firefox's keyboard shortcuts [FF58+]
  * 0 (default) or 1=allow, 2=block
  * [SETTING] to add site exceptions: Ctrl+I>Permissions>Override Keyboard Shortcuts ***/
-   // user_pref("permissions.default.shortcuts", 2);
+// user_pref("permissions.default.shortcuts", 2);
 /* 2616: remove special permissions for certain mozilla domains [FF35+]
  * [1] resource://app/defaults/permissions ***/
 user_pref("permissions.manager.defaultsUrl", "");
@@ -408,20 +432,29 @@ user_pref("extensions.webcompat-reporter.enabled", false); // [DEFAULT: false]
  * [WHY] https://support.mozilla.org/kb/quarantined-domains */
 user_pref("extensions.quarantinedDomains.enabled", true); // [DEFAULT: true]
 /* 6050: prefsCleaner: previously active items removed from arkenfox 115-127 ***/
-   // user_pref("accessibility.force_disabled", "");
-   // user_pref("browser.urlbar.dnsResolveSingleWordsAfterSearch", "");
-   // user_pref("network.protocol-handler.external.ms-windows-store", "");
-   // user_pref("privacy.partition.always_partition_third_party_non_cookie_storage", "");
-   // user_pref("privacy.partition.always_partition_third_party_non_cookie_storage.exempt_sessionstorage", "");
-   // user_pref("privacy.partition.serviceWorkers", "");
+// user_pref("accessibility.force_disabled", "");
+// user_pref("browser.urlbar.dnsResolveSingleWordsAfterSearch", "");
+// user_pref("network.protocol-handler.external.ms-windows-store", "");
+// user_pref("privacy.partition.always_partition_third_party_non_cookie_storage", "");
+// user_pref("privacy.partition.always_partition_third_party_non_cookie_storage.exempt_sessionstorage", "");
+// user_pref("privacy.partition.serviceWorkers", "");
 
 /*** [SECTION 9000]: NON-PROJECT RELATED ***/
-user_pref("_user.js.parrot", "9000 syntax error: the parrot's cashed in 'is chips!");
+user_pref(
+  "_user.js.parrot",
+  "9000 syntax error: the parrot's cashed in 'is chips!"
+);
 /* 9001: disable welcome notices ***/
 user_pref("browser.startup.homepage_override.mstone", "ignore"); // [HIDDEN PREF]
 /* 9002: disable General>Browsing>Recommend extensions/features as you browse [FF67+] ***/
-user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
-user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
+user_pref(
+  "browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons",
+  false
+);
+user_pref(
+  "browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features",
+  false
+);
 /* 9003: disable What's New toolbar icon [FF69+] ***/
 user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
 /* 9004: disable search terms [FF110+]
@@ -429,4 +462,7 @@ user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
 user_pref("browser.urlbar.showSearchTerms.enabled", false);
 
 /* END: internal custom pref to test for syntax errors ***/
-user_pref("_user.js.parrot", "SUCCESS: No no he's not dead, he's, he's restin'!");
+user_pref(
+  "_user.js.parrot",
+  "SUCCESS: No no he's not dead, he's, he's restin'!"
+);

@@ -6,7 +6,6 @@
       "segments": [
         {
           "type": "path",
-          // "background": "#35061c",
           "foreground": "#e488b6",
           "properties": {
             "style": "folder"
@@ -16,7 +15,6 @@
         },
         {
           "type": "git",
-          // "background": "#000000",
           "foreground": "#afd6c9",
           "properties": {
             "fetch_stash_count": false,
@@ -28,33 +26,24 @@
         },
         {
           "type": "root",
-          // "background": "#6b6b0c",
           "foreground": "#ffffff",
           "style": "plain",
           "template": " \uf0e7 "
         },
         {
           "type": "dart",
-          // "background": "#0d0d0d",
           "foreground": "#06A4CE",
           "style": "plain",
           "template": " \uE798 {{ .Full }} "
         },
         {
           "type": "java",
-          // "background": "#350303",
           "foreground": "#e67b90",
           "style": "plain",
           "template": " \ue738 {{ .Full }} "
         },
-        // {
-        //   "type": "time",
-        //   "background": "#35061c",
-        //   "foreground": "#e488b6",
-        //   "style": "plain"
-        // },
         {
-          // "background": "#FFDE57",
+          "type": "python",
           "foreground": "#26547a",
           "powerline_symbol": "\ue0b0",
           "properties": {
@@ -62,17 +51,12 @@
             "fetch_virtual_env": true
           },
           "style": "plain",
-          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
-          "type": "python"
+          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
         },
         {
           "type": "exit",
-          // "background": "#095035",
           "foreground_templates": ["{{ if gt .Code 0 }}#b3153a{{ end }}"],
           "foreground": "#ffffff",
-          // "properties": {
-          //   "always_enabled": true
-          // },
           "style": "plain",
           "template": " \uf188 "
         }
@@ -80,6 +64,5 @@
       "type": "prompt"
     }
   ],
-  // "final_space": true,
   "version": 3
 }

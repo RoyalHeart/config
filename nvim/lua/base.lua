@@ -9,7 +9,7 @@ vim.diagnostic.config({
 vim.opt.autoindent = true                                           --indent the same in new line
 vim.opt.cc = '80'                                                   --column border
 vim.opt.clipboard = 'unnamedplus'                                   --using system clipboard (window)
-vim.opt.cursorline = true                                           --show cursor line
+vim.opt.cursorline = false                                          --show cursor line
 vim.opt.expandtab = true                                            --make tab like spaces
 vim.opt.guicursor = { 'n:blinkon1', 'i:ver100-iCursor', 'v:hor30' } --cursor setting
 vim.opt.hlsearch = true                                             --highlight search
