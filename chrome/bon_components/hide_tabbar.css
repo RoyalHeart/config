@@ -23,6 +23,9 @@
 #sidebar-header {
   display: none;
 }
+#tabbrowser-tabs {
+  display: none;
+}
 
 #nav-bar {
   margin-right: 120px;

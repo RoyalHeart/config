@@ -2,7 +2,8 @@
   --lwt-accent-color: #1d0c13 !important;
   --selected-text-background: #551234 !important;
   --toolbar-bgcolor: #2b121c !important;
-  --urlbar-height: 32px !important;
+  --urlbar-height: 30px !important;
+  --urlbar-min-height: 30px !important;
   --urlbar-toolbar-height: 30px !important;
   --newtab-background-color: var(--rose-quartz-background) !important;
   /*custom value*/
@@ -60,6 +61,7 @@ toolbarbutton {
 toolbar#nav-bar {
   background: var(--lwt-accent-color) !important;
   box-shadow: none !important;
+  border-top: none !important;
 }
 
 /* Sets the URL bar color */
