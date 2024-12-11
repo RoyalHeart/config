@@ -10,5 +10,6 @@
   #PanelUI-button {
     position: fixed;
     left: 0;
+    height: var(--urlbar-height);
   }
 }
