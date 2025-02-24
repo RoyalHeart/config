@@ -11,6 +11,7 @@
 #TabsToolbar {
   min-width: 0 !important;
   min-height: 0 !important;
+  max-height: 0 !important;
 }
 
 #TabsToolbar > .titlebar-buttonbox-container {
@@ -30,4 +31,5 @@
 #nav-bar {
   margin-right: 120px;
   margin-left: 35px;
+  height: 30px !important;
 }
