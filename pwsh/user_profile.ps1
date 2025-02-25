@@ -4,7 +4,6 @@ Set-Alias grep findstr
 Set-Alias g git
 Set-Alias touch New-Item
 Set-Alias which where.exe
-function vsc { Set-Location "D:\Bon\VSCode" && code . }
 function ln ($target, $link) {
     New-Item -ItemType SymbolicLink -Path $link -Value $target
 }
@@ -14,4 +13,20 @@ function sudo ($command) {
 function rename ($target, $link) {
     Rename-Item $target $link
 }
-function wl { Set-Location "D:\Bon\2.Work" && code ".\UNIT.md"}
+function time {
+    Param(
+        [Parameter(Mandatory=$true)]
+        [string]$command,
+        [switch]$quiet = $false
+    )
+    $start = Get-Date
+    try {
+        if ( -not $quiet ) {
+            iex $command | Write-Host
+        } else {
+            iex $command > $null
+        }
+    } finally {
+        $(Get-Date) - $start
+    }
+}
