@@ -1,8 +1,11 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 3,
   "blocks": [
     {
       "alignment": "left",
+      "type": "prompt",
+      "newline": true,
       "segments": [
         {
           "type": "path",
@@ -11,18 +14,7 @@
             "style": "folder"
           },
           "style": "plain",
-          "template": " \ue5ff {{ .Path }} "
-        },
-        {
-          "type": "git",
-          "foreground": "#afd6c9",
-          "properties": {
-            "fetch_stash_count": false,
-            "fetch_status": false,
-            "fetch_upstream_icon": false
-          },
-          "style": "plain",
-          "template": " \ue709 {{ .HEAD }} /* {{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0}} \uf692 {{ .StashCount }}{{ end }}{{ if gt .WorktreeCount 0}} \uf1bb {{ .WorktreeCount }}{{ end }} */ "
+          "template": " \ue5ff {{ .Path }}"
         },
         {
           "type": "root",
@@ -54,15 +46,21 @@
           "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
         },
         {
-          "type": "exit",
-          "foreground_templates": ["{{ if gt .Code 0 }}#b3153a{{ end }}"],
-          "foreground": "#ffffff",
+          "type": "text",
           "style": "plain",
-          "template": " \uf188 "
+          "foreground_templates": [
+            "{{ if gt .Code 0 }}red{{ end }}",
+            "{{ if eq .Code 0 }}#e488b6{{ end }}"
+          ],
+          "background": "transparent",
+          "template": "\n> "
         }
-      ],
-      "type": "prompt"
+      ]
     }
   ],
-  "version": 3
+  "transient_prompt": {
+    "background": "transparent",
+    "foreground": "#e488b6",
+    "template": "> "
+  }
 }
