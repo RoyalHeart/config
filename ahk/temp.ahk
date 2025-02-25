@@ -3,7 +3,7 @@
 #SingleInstance
 
 ; Define the behavior for CapsLock
-ih := InputHook("B L0.09 T0.09", "{Esc}") ; if hold capslock for more than 90ms then it is only ctrl and not esc
+ih := InputHook("B L0.15 T0.15", "{Esc}") ; if hold capslock for more than 150ms then it is only ctrl and not esc
 *CapsLock:: {
     ih.Start()
     ; send Ctrl when first tap and held
@@ -11,7 +11,7 @@ ih := InputHook("B L0.09 T0.09", "{Esc}") ; if hold capslock for more than 90ms 
     KeyWait("CapsLock")
     Send("{Ctrl up}")
 
-    ; wait to check if caplock up less than 100ms to send esc
+    ; wait 150ms to check if tap to send esc
     reason := ih.Wait()
     if (reason = "Stopped") {
         Send "{Esc}"
