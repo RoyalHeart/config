@@ -1,15 +1,8 @@
 #root {
-  /* background-image: url(../images/Steins_Gate.png);
-  background-size: 100vw; */
   --newtab-background-color-secondary: #110a0d !important;
 }
-.ds-outer-wrapper-breakpoint-override main {
-  width: 80vw !important;
-  /* background-image: url(../images/Steins_Gate.png); */
-  background-size: 100%;
-}
 .collapsible-section {
-  padding: 0px 25px !important;
+  padding: 0px !important;
 }
 .outer-wrapper {
   padding: 0 !important;
