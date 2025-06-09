@@ -40,4 +40,3 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 
 " Hightlight current file
 let g:nerdtree_sync_cursorline = 1
-

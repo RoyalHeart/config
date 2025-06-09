@@ -1,15 +1,8 @@
 if vim.g.vscode then
     -- VSCode extension
 else
-require('base')
-require('mapping')
-require('plugins_packer')
-require('color') -- has custom highlight
-
--- Other setting/plugin:
-vim.cmd [[
- for setting_file in split(glob(stdpath('config').'/settings/*.vim'))
-   execute 'source' setting_file
- endfor
-]]
+    require('base')
+    require('mapping')
+    require('color') -- has custom highlight
+    require('config.lazy')
 end

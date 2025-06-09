@@ -1,7 +1,7 @@
 -- Base file
 
 -- Basic config
-vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]] -- format on save
 vim.diagnostic.open_float()
 vim.diagnostic.config({
     virtual_text = true
@@ -34,3 +34,4 @@ vim.opt.wildmenu = true                                             --suggestion
 vim.opt.wildmode = { 'longest', 'list', 'full' }                    --tab completion
 vim.opt.wrap = true                                                 --allow soft wrapping line
 vim.g.mapleader = " "                                               --leader key is space
+vim.g.netrw_liststyle = 3
