@@ -8,7 +8,7 @@ See the above repository for updates as well as full license text. */
   --uc-sidebar-width: 1px;
   --uc-sidebar-hover-width: 210px;
   --uc-autohide-sidebar-delay: 100ms; /* Wait 0.1s before hiding sidebar */
-  --uc-open-sidebar-delay: 150ms; /* Wait 0.1s before hiding sidebar */
+  --uc-open-sidebar-delay: 150ms; /* Wait 0.15s before hiding sidebar */
   --uc-autohide-transition-duration: 115ms;
   --uc-autohide-transition-type: linear;
   --browser-area-z-index-sidebar: 3;
@@ -65,7 +65,8 @@ See the above repository for updates as well as full license text. */
   will-change: min-width;
 }
 #sidebar-box:hover > #sidebar-header,
-#sidebar-box:hover > #sidebar {
+#sidebar-box:hover > #sidebar,
+#sidebar-box:hover > .sidebar-browser-stack > #sidebar {
   min-width: var(--uc-sidebar-hover-width) !important;
   transition-delay: var(--uc-open-sidebar-delay) !important;
 }
