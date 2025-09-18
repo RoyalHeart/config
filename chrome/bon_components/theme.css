@@ -64,10 +64,14 @@ toolbar#nav-bar {
 }
 
 /* Sets the URL bar color */
+#urlbar-searchmode-switcher,
+.searchmode-switcher-chicklet,
 #urlbar {
   background: var(--lwt-accent-color) !important;
+  border: none !important;
 }
-#urlbar-background {
+#urlbar-background,
+.urlbar-background {
   background: var(--lwt-accent-color) !important;
   border: none !important;
 }
