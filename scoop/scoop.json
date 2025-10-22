@@ -1,255 +1,302 @@
 {
+    "apps": [
+        {
+            "Source": "main",
+            "Version": "25.01",
+            "Updated": "2025-09-20T20:30:08.5752014+02:00",
+            "Info": "",
+            "Name": "7zip"
+        },
+        {
+            "Source": "extras",
+            "Version": "2.0.19",
+            "Updated": "2025-09-20T23:32:50.289479+02:00",
+            "Info": "",
+            "Name": "autohotkey"
+        },
+        {
+            "Source": "extras",
+            "Version": "2025.9.0",
+            "Updated": "2025-09-20T21:49:07.1915875+02:00",
+            "Info": "",
+            "Name": "bitwarden"
+        },
+        {
+            "Source": "extras",
+            "Version": "4.5.3",
+            "Updated": "2025-10-02T09:55:58.962544+02:00",
+            "Info": "",
+            "Name": "blender"
+        },
+        {
+            "Source": "extras",
+            "Version": "8.12.0",
+            "Updated": "2025-10-03T09:12:32.7007107+02:00",
+            "Info": "",
+            "Name": "calibre"
+        },
+        {
+            "Source": "nerd-fonts",
+            "Version": "2407.24",
+            "Updated": "2025-09-20T22:42:27.5417449+02:00",
+            "Info": "",
+            "Name": "Cascadia-Code"
+        },
+        {
+            "Source": "main",
+            "Version": "2.1.25-M19",
+            "Updated": "2025-10-22T00:56:57.7072186+02:00",
+            "Info": "",
+            "Name": "coursier"
+        },
+        {
+            "Source": "main",
+            "Version": "3.14.1",
+            "Updated": "2025-09-20T23:31:25.0372851+02:00",
+            "Info": "",
+            "Name": "dark"
+        },
+        {
+            "Source": "extras",
+            "Version": "1.0.9208-23",
+            "Updated": "2025-09-21T13:26:55.4311886+02:00",
+            "Info": "",
+            "Name": "discord"
+        },
+        {
+            "Source": "extras",
+            "Version": "144.0",
+            "Updated": "2025-10-16T23:55:58.3269354+02:00",
+            "Info": "",
+            "Name": "firefox"
+        },
+        {
+            "Source": "extras",
+            "Version": "2025.2.1",
+            "Updated": "2025-10-12T10:02:08.4289425+02:00",
+            "Info": "",
+            "Name": "foxit-pdf-reader"
+        },
+        {
+            "Source": "main",
+            "Version": "5.3.2",
+            "Updated": "2025-09-23T12:04:46.1951822+02:00",
+            "Info": "",
+            "Name": "gawk"
+        },
+        {
+            "Source": "main",
+            "Version": "2.51.0.2",
+            "Updated": "2025-09-30T09:46:07.0713858+02:00",
+            "Info": "",
+            "Name": "git"
+        },
+        {
+            "Source": "main",
+            "Version": "2.6.1",
+            "Updated": "2025-10-22T00:07:54.0451518+02:00",
+            "Info": "",
+            "Name": "gsudo"
+        },
+        {
+            "Source": "nerd-fonts",
+            "Version": "3.4.0",
+            "Updated": "2025-10-21T23:54:22.9887751+02:00",
+            "Info": "",
+            "Name": "Hack-NF"
+        },
+        {
+            "Source": "main",
+            "Version": "2.65.2",
+            "Updated": "2025-09-23T12:55:07.6095991+02:00",
+            "Info": "",
+            "Name": "innounp"
+        },
+        {
+            "Source": "extras",
+            "Version": "2.2.1",
+            "Updated": "2025-09-23T12:08:57.5185935+02:00",
+            "Info": "",
+            "Name": "jenv"
+        },
+        {
+            "Source": "extras",
+            "Version": "25.04-5109",
+            "Updated": "2025-09-21T00:30:21.0220011+02:00",
+            "Info": "",
+            "Name": "kdeconnect"
+        },
+        {
+            "Source": "main",
+            "Version": "24.1",
+            "Updated": "2025-10-13T20:15:14.6164202+02:00",
+            "Info": "",
+            "Name": "latex"
+        },
+        {
+            "Source": "extras",
+            "Version": "25.8.2",
+            "Updated": "2025-10-21T12:02:24.3860808+02:00",
+            "Info": "",
+            "Name": "libreoffice"
+        },
+        {
+            "Source": "extras",
+            "Version": "25.3",
+            "Updated": "2025-10-15T15:30:33.5148443+02:00",
+            "Info": "",
+            "Name": "mobaxterm"
+        },
+        {
+            "Source": "main",
+            "Version": "1.2.2",
+            "Updated": "2025-09-22T12:19:09.6881427+02:00",
+            "Info": "",
+            "Name": "nvm"
+        },
+        {
+            "Source": "extras",
+            "Version": "1.9.14",
+            "Updated": "2025-10-03T09:13:43.877279+02:00",
+            "Info": "",
+            "Name": "obsidian"
+        },
+        {
+            "Source": "main",
+            "Version": "27.2.1",
+            "Updated": "2025-10-16T21:36:26.4313792+02:00",
+            "Info": "",
+            "Name": "oh-my-posh"
+        },
+        {
+            "Source": "extras",
+            "Version": "0.15.4",
+            "Updated": "2025-10-16T21:36:35.4383537+02:00",
+            "Info": "",
+            "Name": "opencode"
+        },
+        {
+            "Source": "java",
+            "Version": "25.0.1-8",
+            "Updated": "2025-10-22T00:20:27.227778+02:00",
+            "Info": "",
+            "Name": "openjdk25"
+        },
+        {
+            "Source": "main",
+            "Version": "5.42.0.1",
+            "Updated": "2025-10-13T21:38:55.7241838+02:00",
+            "Info": "",
+            "Name": "perl"
+        },
+        {
+            "Source": "main",
+            "Version": "10.18.3",
+            "Updated": "2025-10-16T21:36:42.1488092+02:00",
+            "Info": "",
+            "Name": "pnpm"
+        },
+        {
+            "Source": "extras",
+            "Version": "0.95.0",
+            "Updated": "2025-10-16T23:55:44.5340374+02:00",
+            "Info": "",
+            "Name": "powertoys"
+        },
+        {
+            "Source": "main",
+            "Version": "7.5.3",
+            "Updated": "2025-09-20T22:49:11.2886819+02:00",
+            "Info": "",
+            "Name": "pwsh"
+        },
+        {
+            "Source": "main",
+            "Version": "1.28.2",
+            "Updated": "2025-10-17T10:24:28.4376738+02:00",
+            "Info": "",
+            "Name": "rustup"
+        },
+        {
+            "Source": "main",
+            "Version": "1.11.7",
+            "Updated": "2025-10-22T00:53:54.9520465+02:00",
+            "Info": "",
+            "Name": "sbt"
+        },
+        {
+            "Source": "main",
+            "Version": "2.1.0",
+            "Updated": "2025-09-20T22:40:37.4928898+02:00",
+            "Info": "",
+            "Name": "scoop-search"
+        },
+        {
+            "Source": "extras",
+            "Version": "130.0.6723.174",
+            "Updated": "2025-09-22T13:42:51.8371003+02:00",
+            "Info": "",
+            "Name": "thorium"
+        },
+        {
+            "Source": null,
+            "Version": "143.0",
+            "Updated": "2025-10-17T09:56:26.2542681+02:00",
+            "Info": "",
+            "Name": "thunderbird"
+        },
+        {
+            "Source": "extras",
+            "Version": "1.105.1",
+            "Updated": "2025-10-16T21:37:15.0806595+02:00",
+            "Info": "",
+            "Name": "vscode"
+        },
+        {
+            "Source": "nonportable",
+            "Version": "0.5.3",
+            "Updated": "2025-10-22T10:31:03.0216082+02:00",
+            "Info": "",
+            "Name": "wireguard-np"
+        },
+        {
+            "Source": "extras",
+            "Version": "0.208.6",
+            "Updated": "2025-10-21T23:30:37.1645684+02:00",
+            "Info": "",
+            "Name": "zed"
+        }
+    ],
     "buckets": [
         {
             "Name": "main",
             "Source": "https://github.com/ScoopInstaller/Main",
-            "Updated": "2025-10-21T10:30:30+02:00",
+            "Updated": "2025-10-22T10:30:26+02:00",
             "Manifests": 1406
         },
         {
             "Name": "extras",
             "Source": "https://github.com/ScoopInstaller/Extras",
-            "Updated": "2025-10-21T10:31:12+02:00",
-            "Manifests": 2203
+            "Updated": "2025-10-22T10:30:34+02:00",
+            "Manifests": 2204
         },
         {
             "Name": "nerd-fonts",
             "Source": "https://github.com/matthewjberger/scoop-nerd-fonts",
             "Updated": "2025-10-18T07:22:02+02:00",
             "Manifests": 367
-        }
-    ],
-    "apps": [
-        {
-            "Info": "",
-            "Source": "main",
-            "Name": "7zip",
-            "Version": "25.01",
-            "Updated": "2025-09-20T20:30:08.5752014+02:00"
         },
         {
-            "Info": "",
-            "Source": "extras",
-            "Name": "autohotkey",
-            "Version": "2.0.19",
-            "Updated": "2025-09-20T23:32:50.289479+02:00"
+            "Name": "nonportable",
+            "Source": "https://github.com/ScoopInstaller/Nonportable",
+            "Updated": "2025-10-21T22:39:02+02:00",
+            "Manifests": 128
         },
         {
-            "Info": "",
-            "Source": "extras",
-            "Name": "bitwarden",
-            "Version": "2025.9.0",
-            "Updated": "2025-09-20T21:49:07.1915875+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Name": "blender",
-            "Version": "4.5.3",
-            "Updated": "2025-10-02T09:55:58.962544+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Name": "calibre",
-            "Version": "8.12.0",
-            "Updated": "2025-10-03T09:12:32.7007107+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Name": "Cascadia-Code",
-            "Version": "2407.24",
-            "Updated": "2025-09-20T22:42:27.5417449+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Name": "dark",
-            "Version": "3.14.1",
-            "Updated": "2025-09-20T23:31:25.0372851+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Name": "discord",
-            "Version": "1.0.9208-23",
-            "Updated": "2025-09-21T13:26:55.4311886+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Name": "firefox",
-            "Version": "144.0",
-            "Updated": "2025-10-16T23:55:58.3269354+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Name": "foxit-pdf-reader",
-            "Version": "2025.2.1",
-            "Updated": "2025-10-12T10:02:08.4289425+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Name": "gawk",
-            "Version": "5.3.2",
-            "Updated": "2025-09-23T12:04:46.1951822+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Name": "git",
-            "Version": "2.51.0.2",
-            "Updated": "2025-09-30T09:46:07.0713858+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Name": "innounp",
-            "Version": "2.65.2",
-            "Updated": "2025-09-23T12:55:07.6095991+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Name": "jenv",
-            "Version": "2.2.1",
-            "Updated": "2025-09-23T12:08:57.5185935+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Name": "kdeconnect",
-            "Version": "25.04-5109",
-            "Updated": "2025-09-21T00:30:21.0220011+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Name": "latex",
-            "Version": "24.1",
-            "Updated": "2025-10-13T20:15:14.6164202+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Name": "libreoffice",
-            "Version": "25.8.2",
-            "Updated": "2025-10-21T12:02:24.3860808+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Name": "mobaxterm",
-            "Version": "25.3",
-            "Updated": "2025-10-15T15:30:33.5148443+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "nerd-fonts",
-            "Name": "Monaspace-NF-Mono",
-            "Version": "3.4.0",
-            "Updated": "2025-09-22T12:32:17.3783728+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Name": "nvm",
-            "Version": "1.2.2",
-            "Updated": "2025-09-22T12:19:09.6881427+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Name": "obsidian",
-            "Version": "1.9.14",
-            "Updated": "2025-10-03T09:13:43.877279+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Name": "oh-my-posh",
-            "Version": "27.2.1",
-            "Updated": "2025-10-16T21:36:26.4313792+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Name": "opencode",
-            "Version": "0.15.4",
-            "Updated": "2025-10-16T21:36:35.4383537+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Name": "perl",
-            "Version": "5.42.0.1",
-            "Updated": "2025-10-13T21:38:55.7241838+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Name": "pnpm",
-            "Version": "10.18.3",
-            "Updated": "2025-10-16T21:36:42.1488092+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Name": "powertoys",
-            "Version": "0.95.0",
-            "Updated": "2025-10-16T23:55:44.5340374+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Name": "pwsh",
-            "Version": "7.5.3",
-            "Updated": "2025-09-20T22:49:11.2886819+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Name": "rustup",
-            "Version": "1.28.2",
-            "Updated": "2025-10-17T10:24:28.4376738+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Name": "rustup-msvc",
-            "Version": "1.28.2",
-            "Updated": "2025-10-17T10:27:14.9244992+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "main",
-            "Name": "scoop-search",
-            "Version": "2.1.0",
-            "Updated": "2025-09-20T22:40:37.4928898+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Name": "thorium",
-            "Version": "130.0.6723.174",
-            "Updated": "2025-09-22T13:42:51.8371003+02:00"
-        },
-        {
-            "Info": "",
-            "Source": null,
-            "Name": "thunderbird",
-            "Version": "143.0",
-            "Updated": "2025-10-17T09:56:26.2542681+02:00"
-        },
-        {
-            "Info": "",
-            "Source": "extras",
-            "Name": "vscode",
-            "Version": "1.105.1",
-            "Updated": "2025-10-16T21:37:15.0806595+02:00"
+            "Name": "java",
+            "Source": "https://github.com/ScoopInstaller/Java",
+            "Updated": "2025-10-22T03:39:39+02:00",
+            "Manifests": 322
         }
     ]
 }
